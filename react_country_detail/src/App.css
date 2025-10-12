@@ -1,42 +1,70 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root {
+   --bg-color: #202020;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+html {
+  font-size: 62.5%;
+  font-family: "urbanist";
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+body {
+  background-color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #fff;
+}
+
+p,
+li,
+a,
+button {
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.6;
+  color: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+
+
+&:hover {
+  color: #2e86c1;
   }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+button {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    font-family: inherit;
+    font-weight:500;
+    line-height:1.5;
+    cursor: pointer;
+    padding: 0.6rem 2.4rem;
+    text-align: center;
+    outline: none;
+    border: none;
+    text-transform: unset;
+    transition: all 0.3s ease-in-out;
+    background: #202020;
+    color: #fff;
+    border-radius: 1.5rem;
+    /*thisdoesn'twork*/
+    border-width: 0.1rem;
+    border-style: solid;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+    margin-top: 1.6rem;
 }
