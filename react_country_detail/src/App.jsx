@@ -1,31 +1,44 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { AppLayout } from "../src/component/Layouts/AppLayout";
+
+
 import "./App.css";
-import { About } from "./Pages/About";
-import { Contact } from "./Pages/Contact";
-import { Country } from "./Pages/Country";
-import { Home } from "./Pages/Home";
+
+import { Home } from "../src/pages/Home";
+import { About } from "../src/pages/About";
+import { Country } from "../src/pages/Country";
+import { Contact } from "../src/pages/Contact";
+import { ErrorPage } from "./pages/ErrorPage";
+
 
 const router = createBrowserRouter([
   {
-    path:"/",
-    element:<Home/>
+    path: "/",
+    element: <AppLayout />, 
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "about",
+        element: <About />,
+      },
+      {
+        path: "country",
+        element: <Country />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
+      },
+    ],
   },
-  {
-    path:"about",
-    element:<About/>
-  },
-  {
-    path:"contact",
-    element:<Contact/>
-  },
-  {
-    path:"country",
-    element:<Country/>
-  },
-])
+]);
 
 const App = () => {
-  return <h1>Hello React project</h1>;
+  return <RouterProvider router={router}> </RouterProvider>;
 };
 
 export default App;
