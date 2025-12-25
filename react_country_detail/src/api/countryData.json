@@ -1,0 +1,108 @@
+[
+  {
+    "id": 1,
+    "countryName": "Japan",
+    "capital": "Tokyo",
+    "population": 125.8e6,
+    "interestingFact": "Japan consists of over 6,800 islands."
+  },
+  {
+    "id": 2,
+    "countryName": "Nigeria",
+    "capital": "Abuja",
+    "population": 223.8e6,
+    "interestingFact": "Nigeria is one of the most linguistically diverse countries, with 500+ languages."
+  },
+  {
+    "id": 3,
+    "countryName": "Egypt",
+    "capital": "Cairo",
+    "population": 110.0e6,
+    "interestingFact": "The Great Pyramid of Giza was the tallest man-made structure for ~3,800 years."
+  },
+  {
+    "id": 4,
+    "countryName": "United Kingdom",
+    "capital": "London",
+    "population": 67.7e6,
+    "interestingFact": "The UK has no single written constitution; it’s based on statutes and conventions."
+  },
+  {
+    "id": 5,
+    "countryName": "China",
+    "capital": "Beijing",
+    "population": 1409.7e6,
+    "interestingFact": "China produces tens of millions of pairs of chopsticks annually."
+  },
+  {
+    "id": 6,
+    "countryName": "Argentina",
+    "capital": "Buenos Aires",
+    "population": 45.8e6,
+    "interestingFact": "Buenos Aires is nicknamed “The Paris of South America” for its European-style architecture."
+  },
+  {
+    "id": 7,
+    "countryName": "Malaysia",
+    "capital": "Kuala Lumpur",
+    "population": 34.3e6,
+    "interestingFact": "Malaysia is home to the pomelo, the largest citrus fruit."
+  },
+  {
+    "id": 8,
+    "countryName": "Uganda",
+    "capital": "Kampala",
+    "population": 49.7e6,
+    "interestingFact": "Uganda hosts endangered mountain gorillas in the Bwindi Impenetrable Forest."
+  },
+  {
+    "id": 9,
+    "countryName": "Mexico",
+    "capital": "Mexico City",
+    "population": 129.1e6,
+    "interestingFact": "Mexico introduced chocolate, chilies, and corn to the world."
+  },
+  {
+    "id": 10,
+    "countryName": "South Korea",
+    "capital": "Seoul",
+    "population": 51.7e6,
+    "interestingFact": "South Korea ranks among the fastest for average internet speeds."
+  },
+  {
+    "id": 11,
+    "countryName": "United States",
+    "capital": "Washington, D.C.",
+    "population": 333.0e6,
+    "interestingFact": "The US has the world's largest economy and is home to the Grand Canyon."
+  },
+  {
+    "id": 12,
+    "countryName": "India",
+    "capital": "New Delhi",
+    "population": 1.43e9,
+    "interestingFact": "India invented the game of chess and is the largest democracy in the world."
+  },
+  {
+    "id": 13,
+    "countryName": "France",
+    "capital": "Paris",
+    "population": 65.6e6,
+    "interestingFact": "France is the most visited country in the world, attracting ~90 million tourists annually."
+  },
+  {
+    "id": 14,
+    "countryName": "Germany",
+    "capital": "Berlin",
+    "population": 83.3e6,
+    "interestingFact": "Germany is famous for its Autobahn, where some sections have no speed limit."
+  },
+  {
+    "id": 15,
+    "countryName": "Brazil",
+    "capital": "Brasília",
+    "population": 203.1e6,
+    "interestingFact": "Brazil is home to the Amazon Rainforest, which produces ~20% of the world’s oxygen."
+  }
+]
+
