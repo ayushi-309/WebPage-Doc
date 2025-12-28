@@ -282,3 +282,23 @@ nav ul {
 }
 
 /* footer section */
+
+
+
+
+
+
+
+
+@keyframes l3 {
+  to{
+    transform: rotate(1turns);
+  }
+}
+
+.loader-section {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
