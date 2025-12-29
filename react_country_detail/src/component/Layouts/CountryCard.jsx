@@ -22,12 +22,12 @@ export const CountryCard = ({ country }) => {
                     </p>
                     <p>
                         <span className="card-description">Capital:</span>
-                        {capital}
+                        {capital[0]}
                     </p>
 
                     <NavLink to={`/country/${name.common}`}>
-                            <button>Read More</button>
-                    </Navlink>
+                        <button>Read More</button>
+                    </NavLink>
 
                 </div>
             </div>

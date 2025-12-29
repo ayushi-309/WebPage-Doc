@@ -9,3 +9,15 @@ const api = axios.create({
 export const getCountryData = () => {
     return api.get("/all?fields=name,population,region,capital,flags");
 }
+
+
+// HTTP GET METHOD FOR individual country
+
+export const getCountryIndData = (name) => {
+    return api.get(
+        `/name/${name}?fullText=true&fields=name,population,
+        region,capital,flags,languages,currencies,
+        subregion,tld,borders`
+    );
+
+}
