@@ -1,4 +1,4 @@
-import { useEffect, useState , useTransition } from "react";
+import { useEffect, useState, useTransition } from "react";
 import { getCountryData } from "../api/postApi";
 import { Loader } from "../component/UI/Loader";
 import { CountryCard } from "../component/Layouts/CountryCard";
@@ -6,12 +6,16 @@ import { CountryCard } from "../component/Layouts/CountryCard";
 export const Country = () => {
 
 
- const [isPending, startTransition] = useTransition();
- const [countries, setCountries] = useState([]);
+  const [isPending, startTransition] = useTransition();
+  const [countries, setCountries] = useState([]);
+
+
+  const [search, setSearch] = useState();
+  const [filter, setFilter] = useState([]);
 
   useEffect(() => {
 
-    startTransition(async() => {
+    startTransition(async () => {
       const res = await getCountryData();
       console.log(res);
       setCountries(res.data);
@@ -27,11 +31,19 @@ export const Country = () => {
     <section className="country-section">
 
 
-     <ul className="grid grid-four-cols">{
-      countries.map((curCountry,index) => {
-        return <CountryCard country=
-        {curCountry} key={index} />
-      })
+      <SearchFilter
+        search={search}
+        setSearch={setSearch}
+        filter={filter}
+        setFilter={setFilter}
+      />
+
+
+      <ul className="grid grid-four-cols">{
+        countries.map((curCountry, index) => {
+          return <CountryCard country=
+            {curCountry} key={index} />
+        })
 
       }</ul>
 
