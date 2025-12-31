@@ -2,6 +2,7 @@ import { useEffect, useState, useTransition } from "react";
 import { getCountryData } from "../api/postApi";
 import { Loader } from "../component/UI/Loader";
 import { CountryCard } from "../component/Layouts/CountryCard";
+import { SearchFilter } from "../component/UI/SearchFilter";
 
 export const Country = () => {
 
@@ -26,6 +27,30 @@ export const Country = () => {
 
   if (isPending) return <Loader />;
 
+  // console.log(search, filter);
+
+
+  const searchCountry = (country) => {
+
+    if (search) {
+      return country.name.common.toLowerCase().includes(search.toLowerCase());
+    } return country;
+
+  };
+
+
+  const filterRegion = (country) => {
+
+    if (filter ==="all") return country;
+      return country.region === filter;
+     };
+
+
+  // here is the main logic
+
+  const filterCountries = countries.filter(
+    (country) => searchCountry(country) && filterRegion(country));
+
 
   return (
     <section className="country-section">
@@ -36,11 +61,13 @@ export const Country = () => {
         setSearch={setSearch}
         filter={filter}
         setFilter={setFilter}
+        countries={countries}
+        setCountries={setCountries}
       />
 
 
       <ul className="grid grid-four-cols">{
-        countries.map((curCountry, index) => {
+        filterCountries.map((curCountry, index) => {
           return <CountryCard country=
             {curCountry} key={index} />
         })
