@@ -58,7 +58,7 @@ button {
   transition: all 0.3s ease-in-out;
   background: #202020;
   color: #fff;
-  border-radius: 1.5rem;
+  
   /*thisdoesn'twork*/
   border-width: 0.1rem;
   border-style: solid;
@@ -66,6 +66,7 @@ button {
   -moz-border-radius: 1.5rem;
   -ms-border-radius: 1.5rem;
   -o-border-radius: 1.5rem;
+  border-radius: 1.5rem;
   margin-top: 1.6rem;
 }
 
@@ -221,7 +222,7 @@ nav ul {
 
 
 /* about section */
-
+/* 
 .section-about {
   margin: 0 auto 9rem auto;
 }
@@ -326,15 +327,13 @@ nav ul {
 /* footer section */
 
 
-/* ======================
-   Footer Section
-====================== */
+
 .footer-section {
   background-color: #0f172a; /* dark blue */
   color: #e5e7eb;
   padding: 4rem 0 0 0;
   font-family: "Poppins", sans-serif;
-}
+} */
 
 /* ======================
    Grid Utilities
@@ -467,4 +466,349 @@ nav ul {
   .footer-menu ul {
     margin-top: 1rem;
   }
+}
+
+
+
+
+/* Contact Section */
+
+/* ======================
+   Contact Section
+====================== */
+.section-contact {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: #f8fafc;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ======================
+   Title
+====================== */
+.container-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #38bdf8;
+}
+
+/* ======================
+   Contact Wrapper
+====================== */
+.contact-wrapper {
+  max-width: 600px;
+  margin: auto;
+  background: #020617;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+
+/* ======================
+   Form Styling
+====================== */
+.contact-wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.9rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #0f172a;
+  color: #f8fafc;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-control::placeholder {
+  color: #94a3b8;
+}
+
+/* Input Focus Effect */
+.form-control:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.3);
+}
+
+/* ======================
+   Textarea
+====================== */
+textarea.form-control {
+  resize: none;
+}
+
+/* ======================
+   Button
+====================== */
+button[type="submit"] {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #020617;
+  border: none;
+  padding: 0.9rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Button Hover */
+button[type="submit"]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.5);
+}
+
+/* =====*
+
+
+
+
+/* ======================
+   About Section
+====================== */
+.section-about {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: #f8fafc;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ======================
+   Title
+====================== */
+.section-about .container-title {
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  color: #38bdf8;
+  line-height: 1.3;
+}
+
+/* ======================
+   Card Grid
+====================== */
+.gradient-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+
+/* ======================
+   Card Wrapper
+====================== */
+.card {
+  position: relative;
+  border-radius: 18px;
+  padding: 2px;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9, #6366f1);
+  transition: transform 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* ======================
+   Card Inner
+====================== */
+.container-card {
+  height: 100%;
+  border-radius: 16px;
+  padding: 2rem;
+  background: #020617;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* ======================
+   Card Title
+====================== */
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin-bottom: 0.8rem;
+}
+
+/* ======================
+   Card Text
+====================== */
+.container-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #cbd5f5;
+}
+
+/* Label */
+.card-description {
+  font-weight: 600;
+  color: #38bdf8;
+  margin-right: 0.4rem;
+}
+
+/* ======================
+   Responsive Design
+====================== */
+@media (max-width: 768px) {
+  .section-about {
+    padding: 4rem 1rem;
+  }
+
+  .section-about .container-title {
+    font-size: 2.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-about .container-title {
+    font-size: 1.8rem;
+  }
+
+  .container-card {
+    padding: 1.6rem;
+  }
+}
+
+
+
+/* ===== Country Section ===== */
+.country-section {
+  padding: 3rem 5%;
+  background-color: #f4f6f8;
+  min-height: 100vh;
+}
+
+/* ===== Grid Layout ===== */
+.grid {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.grid-four-cols {
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+/* ===== Country Card ===== */
+.country-card {
+  background-color: #ffffff;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.country-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Country Flag */
+.country-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+/* Country Content */
+.country-card-content {
+  padding: 1.6rem;
+}
+
+.country-card-content h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: #222;
+}
+
+.country-card-content p {
+  font-size: 1.4rem;
+  color: #555;
+  margin-bottom: 0.4rem;
+}
+
+/* ===== Search & Filter Section ===== */
+.search-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* Search Input */
+.search-filter input {
+  padding: 1rem 1.4rem;
+  border-radius: 0.8rem;
+  border: 1px solid #ccc;
+  font-size: 1.4rem;
+  width: 260px;
+  outline: none;
+}
+
+.search-filter input:focus {
+  border-color: #4f46e5;
+}
+
+/* Select Filter */
+.search-filter select {
+  padding: 1rem 1.4rem;
+  border-radius: 0.8rem;
+  border: 1px solid #ccc;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+/* ===== Loader Center ===== */
+.loader-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .country-section {
+    padding: 2rem;
+  }
+
+  .search-filter {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-filter input,
+  .search-filter select {
+    width: 100%;
+  }
+}
+
+
+.search-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.section-searchFilter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
